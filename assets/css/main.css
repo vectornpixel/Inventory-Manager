@@ -1,0 +1,187 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,300,100italic,300italic,500,400italic,500italic,700,700italic,900,900italic);
+@import "../css/bootstrap.css";
+@import "../css/font-awesome.css";
+@import "../css/animate.css";
+/*------------------------------------*\
+		$Global Variables
+\*------------------------------------*/
+/*------------------------------------*\
+	$Base Styles
+\*------------------------------------*/
+html,
+body {
+  height: 100%;
+  background-color: #f6f6f6 /*#e7e9ec */ /* #f5f8f9*/;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: .1em;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 400;
+}
+p {
+  color: #494949;
+  font-weight: 300;
+}
+hr {
+  border-top: 1px solid #dadce0;
+}
+.full-width {
+  width: 100%;
+}
+.centered {
+  display: table;
+  width: 100%;
+}
+.centered .vcenter {
+  display: table-cell;
+  vertical-align: middle;
+}
+.spacing-padding {
+  padding: 20px;
+}
+.spacing {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.spacing-bottom {
+  margin-bottom: 20px;
+}
+.spacing-top {
+  margin-top: 20px;
+}
+.marginless {
+  margin: 0;
+}
+.no-padding {
+  padding: 0;
+}
+.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+.row.no-gutters > [class^="col-"],
+.row.no-gutters > [class*=" col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+.circle {
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  background-color: #4cc2f3;
+  width: 50%;
+  height: 50%;
+  padding: 48px;
+}
+.circle:hover {
+  background-color: #dcdcdc;
+  -webkit-transition-property: color, background;
+  -webkit-transition-duration: .20s, .20s;
+  -webkit-transition-timing-function: linear, ease-in;
+}
+/*------------------------------------*\
+	$Buttons
+\*------------------------------------*/
+.btn-primary {
+  background-color: #e74c3c;
+  border: none;
+}
+.btn-primary:hover {
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+}
+/*------------------------------------*\
+    $Font Sizing & Styles
+\*------------------------------------*/
+.giga {
+  font-size: 80px;
+}
+.mega {
+  font-size: 64px;
+}
+.kilo {
+  font-size: 48px;
+}
+.alpha {
+  font-size: 32px;
+}
+.beta {
+  font-size: 24px;
+}
+.gamma {
+  font-size: 20px;
+}
+.delta {
+  font-size: 18px;
+}
+.epsilon {
+  font-size: 16px;
+}
+.zeta {
+  font-size: 14px;
+}
+.milli {
+  font-size: 12px;
+}
+.text-bold {
+  font-weight: 400;
+}
+/*------------------------------------*\
+    $Color Overwrites
+\*------------------------------------*/
+.blue {
+  color: #e74c3c;
+}
+.red {
+  color: #ff0000;
+}
+.darkgrey {
+  color: #323335;
+}
+.secondary-color {
+  background-color: #a6ccbc;
+}
+.muted-font {
+  color: #aaaaaa;
+}
+#sidebar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 200px;
+  height: 100%;
+  background-color: #494949;
+}
+#sidebar #logo {
+  background-color: #e74c3c;
+  color: #ffffff;
+  text-align: center;
+  height: 150px;
+  padding: 10px;
+}
+#sidebar #logo h1 {
+  font-size: 72px;
+  font-weight: 800;
+  line-height: 1;
+}
+#sidebar .navigation li {
+  color: #ffffff;
+  padding: 50px;
+  border-bottom: 1px solid #707070;
+}
+.header {
+  background-color: #d5d5d5;
+  margin-bottom: 50px;
+}
+.content-table__head {
+  background-color: #d5d5d5;
+}
+.content-table__head p {
+  color: #e74c3c;
+}
