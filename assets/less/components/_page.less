@@ -1,9 +1,38 @@
+.header{
+  background-color: @lightgrey;
+}
 .content-table__head{
   background-color:#d5d5d5;
+
+    th{
+      color: @brand-primary;
+      text-transform: uppercase;
+      text-align: center;
+
+    }
+
   p{
     color: @brand-primary;
+    text-transform: uppercase;
+
   }
 }
+
 .content-table__content{
-  //background-color: @lightergrey;
+  tr{
+    background-color: @lightgrey;
+    text-align: center;
+  }
+  tr:nth-child(odd){
+    background-color: @lightergrey;
+  }
+}
+#search-bar{
+  background-color: @brand-primary;
+  padding:50px;
+  text-align: center;
+  margin-bottom: @baseMargin * 5;
+}
+.filter-bar{
+  margin-bottom: @baseMargin * 5;
 }

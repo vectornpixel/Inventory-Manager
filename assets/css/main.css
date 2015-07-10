@@ -58,6 +58,12 @@ hr {
 .no-padding {
   padding: 0;
 }
+.padding-left-none {
+  padding-left: 0;
+}
+.padding-right-none {
+  padding-right: 0;
+}
 .row.no-gutters {
   margin-right: 0;
   margin-left: 0;
@@ -85,6 +91,9 @@ hr {
 /*------------------------------------*\
 	$Buttons
 \*------------------------------------*/
+.btn {
+  border-radius: 0;
+}
 .btn-primary {
   background-color: #e74c3c;
   border: none;
@@ -175,13 +184,118 @@ hr {
   padding: 50px;
   border-bottom: 1px solid #707070;
 }
+.form-control {
+  background-color: #e2e2e2;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+.form__search {
+  margin-bottom: 1.5em;
+}
+.form__search input:-webkit-autofill {
+  background-color: transparent !important;
+  -webkit-box-shadow: 0 0 0 1000px white inset !important;
+  -moz-box-shadow: 0 0 0 1000px white inset !important;
+  box-shadow: 0 0 0 1000px white inset !important;
+}
+.form__search input,
+.form__search label {
+  font-size: 1.3em;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+.form__search input:focus {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  border-bottom-width: 2px;
+}
+.form__search input {
+  font-weight: 100;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding: 10px 0px 42px 0px;
+  border: none;
+  border-radius: 0px;
+  border-bottom: 1px solid #ffffff;
+  outline: none;
+  margin-bottom: 20px;
+  background: none;
+  color: #ffffff;
+}
+.form__search label {
+  text-align: left !important;
+  margin: 0;
+  padding-bottom: 28px;
+  /*border-bottom: 1px solid #aaa;*/
+  top: 0px;
+  text-transform: uppercase;
+  font-weight: normal;
+  color: #ffffff;
+  font-size: 0.85em;
+  -moz-animation: float-labels 300ms none ease-out;
+  -webkit-animation: float-labels 300ms none ease-out;
+  -o-animation: float-labels 300ms none ease-out;
+  -ms-animation: float-labels 300ms none ease-out;
+  -khtml-animation: float-labels 300ms none ease-out;
+  animation: float-labels 300ms none ease-out;
+  /* There is a bug sometimes pausing the animation. This avoids that.*/
+  animation-play-state: running !important;
+  -webkit-animation-play-state: running !important;
+}
+.form__search input.empty + label {
+  top: 0.1em;
+  font-size: 1.5em;
+  animation: none;
+  -webkit-animation: none;
+}
+.form__search input:not(.empty) + label {
+  z-index: 1;
+}
+.form__search input:not(.empty):focus + label {
+  color: #ffffff;
+}
+.form__search.label-bottom label {
+  -moz-animation: float-labels-bottom 300ms none ease-out;
+  -webkit-animation: float-labels-bottom 300ms none ease-out;
+  -o-animation: float-labels-bottom 300ms none ease-out;
+  -ms-animation: float-labels-bottom 300ms none ease-out;
+  -khtml-animation: float-labels-bottom 300ms none ease-out;
+  animation: float-labels-bottom 300ms none ease-out;
+}
+.form__search.label-bottom input:not(.empty) + label {
+  top: 3em;
+}
 .header {
   background-color: #d5d5d5;
-  margin-bottom: 50px;
 }
 .content-table__head {
   background-color: #d5d5d5;
 }
+.content-table__head th {
+  color: #e74c3c;
+  text-transform: uppercase;
+  text-align: center;
+}
 .content-table__head p {
   color: #e74c3c;
+  text-transform: uppercase;
+}
+.content-table__content tr {
+  background-color: #d5d5d5;
+  text-align: center;
+}
+.content-table__content tr:nth-child(odd) {
+  background-color: #e2e2e2;
+}
+#search-bar {
+  background-color: #e74c3c;
+  padding: 50px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.filter-bar {
+  margin-bottom: 50px;
 }
