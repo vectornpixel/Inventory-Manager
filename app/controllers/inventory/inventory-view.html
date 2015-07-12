@@ -1,38 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title></title>
-    <link href="assets/css/main.css" rel="stylesheet" type="text/css">
-</head>
-<body>
-
-<div id="sidebar">
-    <div id="logo">
-        <h1>NM</h1>
-    </div>
-    <div class="navigation">
-        <ul class="list-unstyled text-center">
-            <li><i class="fa fa-suitcase fa-2x"></i><span>Inventory</span></li>
-            <li><i class="fa fa-shopping-cart fa-2x"></i><span>Orders</span></li>
-            <li><i class="fa fa-user fa-2x"></i><span>Customers</span></li>
-            <li><i class="fa fa-cog fa-2x"></i><span>Settings</span></li>
-        </ul>
-    </div>
-</div>
-<div class="container-fluid">
-    <div class="row header">
-        <div class="text-center">
-                <h2>Tees and things</h2>
-        </div>
-    </div>
-</div>
-<div id="search-bar" class="form__search">
-    <div class="container">
-        <input type="text"  placeholder="SEARCH PRODUCT">
-    </div>
-</div>
-
 <div class="filter-bar">
     <div class="container">
         <div class="row">
@@ -54,37 +19,21 @@
                     <tr class="content-table__head">
                         <th>Stock</th>
                         <th>Name</th>
-                        <th>Purchase Date</th>
+                        <th>Type</th>
                         <th>Category</th>
                         <th>SKU</th>
                         <th>Price</th>
                     </tr>
                     </thead>
                     <tbody class="content-table__content">
-                    <tr>
+                    <tr ng-repeat="inventory in data">
 
-                        <td>#12345</td>
-                        <td>Mark</td>
-                        <td>1/1/15</td>
-                        <td>T-Shirt</td>
-                        <td>56443</td>
-                        <td>$50.00</td>
-                    </tr>
-                    <tr>
-                        <td>#12345</td>
-                        <td>Jacob</td>
-                        <td>1/1/15</td>
-                        <td>T-Shirt</td>
-                        <td>56443</td>
-                        <td>$50.00</td>
-                    </tr>
-                    <tr>
-                        <td>#12345</td>
-                        <td>Larry</td>
-                        <td>1/1/15</td>
-                        <td>T-Shirt</td>
-                        <td>56443</td>
-                        <td>$50.00</td>
+                        <td>{{inventory.stock}}</td>
+                        <td>{{inventory.name}}</td>
+                        <td>{{inventory.type}}</td>
+                        <td>{{inventory.category}}</td>
+                        <td>{{inventory.sku}}</td>
+                        <td>{{inventory.price}}</td>
                     </tr>
 
                     </tbody>
@@ -111,5 +60,3 @@
             </div>
     </div>
 </div>
-</body>
-</html>

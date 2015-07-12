@@ -1,0 +1,1 @@
+App.controller("CustomersController",["$scope",function(o){}]);

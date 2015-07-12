@@ -4,97 +4,19 @@
     <meta charset="UTF-8">
     <title></title>
     <link href="assets/css/main.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="app/libs/angular.min.js"></script>
+    <script type="text/javascript" src="app/app.js"></script>
+
+    <script type="text/javascript" src="app/libs/angular-route.js"></script>
+    <script type="text/javascript" src="app/libs/angular-resource.js"></script>
+    <script type="text/javascript" src="app/controllers/inventory/inventory.js"></script>
+    <script type="text/javascript" src="app/controllers/customers/customers.js"></script>
+    <script type="text/javascript" src="app/controllers/orders/orders.js"></script>
 </head>
-<body>
+<body ng-app="App">
+<div ng-include src="'app/navigation.html'"></div>
 
-<div id="sidebar">
-    <div id="logo">
-        <h1>NM</h1>
-    </div>
-    <div class="navigation">
-        <ul class="list-unstyled text-center">
-            <li><a href="inventory.html"><i class="fa fa-suitcase fa-2x"></i><span>Inventory</span></a></li>
-            <li><a href="inventory.html"><i class="fa fa-shopping-cart fa-2x"></i><span>Orders</span></a></li>
-            <li><a href="inventory.html"><i class="fa fa-user fa-2x"></i><span>Customers</span></a></li>
-            <li><<a href="inventory.html"><i class="fa fa-cog fa-2x"></i><span>Settings</span></a></li>
-        </ul>
-    </div>
-</div>
-<div class="container-fluid">
-    <div class="row header">
-        <div class="text-center">
-                <h2>Tees and things</h2>
-        </div>
-    </div>
-</div>
-<div id="search-bar" class="form__search">
-    <div class="container">
-        <input type="text"  placeholder="SEARCH PRODUCT">
-    </div>
-</div>
+<div ng-view></div>
 
-<div class="filter-bar">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3 padding-left-none">
-                <input type="text" class="form-control" placeholder="ORDER NUMBER">
-            </div>
-            <div class="col-md-3">
-                <input type="text" class="form-control" placeholder="SELECT DATES">
-            </div>
-            <div class="col-md-2">
-                <button class="btn btn-primary full-width">UPDATE</button>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="container">
-    <!--<button class="btn btn-primary">UPDATE</button>-->
-    <div class="row">
-            <div class="content-table___list">
-                <table class="table table-bordered">
-                    <thead>
-                    <tr class="content-table__head">
-                        <th>Order Number</th>
-                        <th>Customer</th>
-                        <th>Purchase Date</th>
-                        <th>Category</th>
-                        <th>SKU</th>
-                        <th>Price</th>
-                    </tr>
-                    </thead>
-                    <tbody class="content-table__content">
-                    <tr>
-
-                        <td>#12345</td>
-                        <td>Mark</td>
-                        <td>1/1/15</td>
-                        <td>T-Shirt</td>
-                        <td>56443</td>
-                        <td>$50.00</td>
-                    </tr>
-                    <tr>
-                        <td>#12345</td>
-                        <td>Jacob</td>
-                        <td>1/1/15</td>
-                        <td>T-Shirt</td>
-                        <td>56443</td>
-                        <td>$50.00</td>
-                    </tr>
-                    <tr>
-                        <td>#12345</td>
-                        <td>Larry</td>
-                        <td>1/1/15</td>
-                        <td>T-Shirt</td>
-                        <td>56443</td>
-                        <td>$50.00</td>
-                    </tr>
-
-                    </tbody>
-                </table>
-
-            </div>
-    </div>
-</div>
 </body>
 </html>
