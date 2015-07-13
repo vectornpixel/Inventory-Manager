@@ -1,10 +1,9 @@
 [{
-  "firstName": " ",
-  "lastName": " ",
-  "email": " ",
-  "password": " ",
-  "customerID": " ",
-  "location": " ",
-  "phoneNumber": " ",
-  "thumb": " "
+  "first_name": "Asim",
+  "last_name": "Craft",
+  "email": "vectornpixel@gmail.com",
+  "customerID": "1",
+  "location": "Novi, MI",
+  "phone_number": "9546810018",
+  "thumb": "thumb.png"
 }]

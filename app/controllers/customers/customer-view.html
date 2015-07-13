@@ -13,15 +13,15 @@
 <div class="container">
 
     <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-4" ng-repeat="user in data">
             <div class="customer__wrapper">
                 <div class="customer__info">
                     <div class="pull-left customer__info--thumb">
-                        <img src="../../../assets/images/thumb.png">
+                        <img src="../../../assets/images/{{user.thumb}}">
                     </div>
                     <div class="customer__info--wrapper">
                         <div class="customer__info--user">
-                            <p>TIM WONAKI<span>DETROIT, MI</span></p>
+                            <p>{{user.first_name}} {{user.last_name}}<span>{{user.location}}</span></p>
                         </div>
                     </div>
                     <div class="clearfix"></div>
@@ -29,65 +29,16 @@
                 <div class="customer__info--footer clearfix text-center">
                     <div class="customer__info--email col-md-6">
                         <p class="text-bold">EMAIL</p>
-                        <p>TIM@GMAIL.COM</p>
+                        <p>{{user.email}}</p>
                     </div>
                     <div class="customer__info--phone col-md-6">
                         <p class="text-bold">PHONE</p>
-                        <p>313.777.5543</p>
+                        <p>{{user.phone_number}}</p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="col-md-4">
-            <div class="customer__wrapper">
-                <div class="customer__info">
-                    <div class="pull-left customer__info--thumb">
-                        <img src="../../../assets/images/thumb.png">
-                    </div>
-                    <div class="customer__info--wrapper">
-                        <div class="customer__info--user">
-                            <p>TIM WONAKI<span>DETROIT, MI</span></p>
-                        </div>
-                    </div>
-                    <div class="clearfix"></div>
-                </div>
-                <div class="customer__info--footer clearfix text-center">
-                    <div class="customer__info--email col-md-6">
-                        <p class="text-bold">EMAIL</p>
-                        <p>TIM@GMAIL.COM</p>
-                    </div>
-                    <div class="customer__info--phone col-md-6">
-                        <p class="text-bold">PHONE</p>
-                        <p>313.777.5543</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="customer__wrapper">
-                <div class="customer__info">
-                    <div class="pull-left customer__info--thumb">
-                        <img src="../../../assets/images/thumb.png">
-                    </div>
-                    <div class="customer__info--wrapper">
-                        <div class="customer__info--user">
-                            <p>TIM WONAKI<span>DETROIT, MI</span></p>
-                        </div>
-                    </div>
-                    <div class="clearfix"></div>
-                </div>
-                <div class="customer__info--footer clearfix text-center">
-                    <div class="customer__info--email col-md-6">
-                        <p class="text-bold">EMAIL</p>
-                        <p>TIM@GMAIL.COM</p>
-                    </div>
-                    <div class="customer__info--phone col-md-6">
-                        <p class="text-bold">PHONE</p>
-                        <p>313.777.5543</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+
     </div>
 
 </div>

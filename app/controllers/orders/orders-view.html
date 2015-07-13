@@ -23,37 +23,24 @@
                         <th>Order Number</th>
                         <th>Customer</th>
                         <th>Purchase Date</th>
+                        <th>Name</th>
                         <th>Category</th>
                         <th>SKU</th>
                         <th>Price</th>
                     </tr>
                     </thead>
                     <tbody class="content-table__content">
-                    <tr>
+                    <tr ng-repeat="orders in data">
 
-                        <td>#12345</td>
-                        <td>Mark</td>
-                        <td>1/1/15</td>
-                        <td>T-Shirt</td>
-                        <td>56443</td>
-                        <td>$50.00</td>
+                        <td>{{orders.order_number}}</td>
+                        <td>{{orders.customer}}</td>
+                        <td>{{orders.date}}</td>
+                        <td>{{orders.name}}</td>
+                        <td>{{orders.category}}</td>
+                        <td>{{orders.sku}}</td>
+                        <td>{{orders.price}}</td>
                     </tr>
-                    <tr>
-                        <td>#12345</td>
-                        <td>Jacob</td>
-                        <td>1/1/15</td>
-                        <td>T-Shirt</td>
-                        <td>56443</td>
-                        <td>$50.00</td>
-                    </tr>
-                    <tr>
-                        <td>#12345</td>
-                        <td>Larry</td>
-                        <td>1/1/15</td>
-                        <td>T-Shirt</td>
-                        <td>56443</td>
-                        <td>$50.00</td>
-                    </tr>
+
 
                     </tbody>
                 </table>

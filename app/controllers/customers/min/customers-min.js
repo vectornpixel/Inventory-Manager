@@ -1,1 +1,1 @@
-App.controller("CustomersController",["$scope",function(o){}]);
+App.controller("CustomersController",["$scope","Users",function(s,e){s.getUsers=function(){e.success(function(e){s.data=e})},s.getUsers()}]).factory("Users",function(s){return s.get("app/models/users.json")});

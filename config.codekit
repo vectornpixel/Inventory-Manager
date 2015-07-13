@@ -194,6 +194,17 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1
 		},
+	"\/app\/models\/orders.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/models\/orders.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/app\/models\/orders-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
 	"\/app\/models\/users.json": {
 		"fileType": 524288,
 		"ignore": 1,

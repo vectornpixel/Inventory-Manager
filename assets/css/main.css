@@ -330,6 +330,7 @@ hr {
 .customer__wrapper .customer__info .customer__info--user {
   position: relative;
   top: 30px;
+  text-transform: uppercase;
 }
 .customer__wrapper .customer__info .customer__info--user span {
   display: block;
