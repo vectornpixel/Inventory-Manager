@@ -25,7 +25,7 @@ var App = angular.module('App', [
                 controller: 'SettingsController'
             }).
             when('/', {
-                templateUrl: 'app/controllers/auth/login-view.html',
+                templateUrl: 'app/controllers/auth/login.html',
                 controller: 'AuthController'
             }).otherwise({
                 redirectTo: '/'

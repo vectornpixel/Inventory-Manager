@@ -1,50 +1,55 @@
-<div class="filter-bar">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3 padding-left-none">
-                <input type="text" class="form-control" placeholder="ORDER NUMBER">
-            </div>
-            <div class="col-md-3">
-                <input type="text" class="form-control" placeholder="SELECT DATES">
-            </div>
-            <div class="col-md-2">
-                <button class="btn btn-primary full-width">UPDATE</button>
-            </div>
+
+    <div ng-include src="'app/navigation.html'"></div>
+    <div class="col-sm-9 col-sm-offset-2 col-md-10 col-md-offset-1 main">
+        <div class="filter-bar">
+
+                <div class="row">
+                    <div class="col-md-3">
+                        <input type="text" class="form-control" placeholder="ORDER NUMBER">
+                    </div>
+                    <div class="col-md-3">
+                        <input type="text" class="form-control" placeholder="SELECT DATES">
+                    </div>
+                    <div class="col-md-2">
+                        <button class="btn btn-primary full-width">UPDATE</button>
+                    </div>
+                </div>
+
         </div>
-    </div>
-</div>
-<div class="container">
-    <!--<button class="btn btn-primary">UPDATE</button>-->
-    <div class="row">
-            <div class="content-table___list">
-                <table class="table table-bordered">
-                    <thead>
-                    <tr class="content-table__head">
-                        <th>Order Number</th>
-                        <th>Customer</th>
-                        <th>Purchase Date</th>
-                        <th>Name</th>
-                        <th>Category</th>
-                        <th>SKU</th>
-                        <th>Price</th>
-                    </tr>
-                    </thead>
-                    <tbody class="content-table__content">
-                    <tr ng-repeat="orders in data">
 
-                        <td>{{orders.order_number}}</td>
-                        <td>{{orders.customer}}</td>
-                        <td>{{orders.date}}</td>
-                        <td>{{orders.name}}</td>
-                        <td>{{orders.category}}</td>
-                        <td>{{orders.sku}}</td>
-                        <td>{{orders.price}}</td>
-                    </tr>
+            <!--<button class="btn btn-primary">UPDATE</button>-->
+            <div class="row">
+                <div class="content-table___list">
+                    <table class="table table-bordered">
+                        <thead>
+                        <tr class="content-table__head">
+                            <th>Order Number</th>
+                            <th>Customer</th>
+                            <th>Purchase Date</th>
+                            <th>Name</th>
+                            <th>Category</th>
+                            <th>SKU</th>
+                            <th>Price</th>
+                        </tr>
+                        </thead>
+                        <tbody class="content-table__content">
+                        <tr ng-repeat="orders in data">
+
+                            <td><a href="">{{orders.order_number}}</a></td>
+                            <td>{{orders.customer}}</td>
+                            <td>{{orders.date}}</td>
+                            <td>{{orders.name}}</td>
+                            <td>{{orders.category}}</td>
+                            <td>{{orders.sku}}</td>
+                            <td>{{orders.price}}</td>
+                        </tr>
 
 
-                    </tbody>
-                </table>
+                        </tbody>
+                    </table>
 
+                </div>
             </div>
+
+
     </div>
-</div>

@@ -1,1 +1,1 @@
-App.controller("AuthController",["$scope",function(o){}]);
+App.controller("AuthController",["$scope","$http","$location",function(o,n,e){o.userInfo={email:"test@vnp.com",password:"demo"},o.SignIn=function(){var s=o.userInfo.email,t=o.userInfo.password;n.post({username:s,password:t}).then(function(){console.log("login successful"),e.path("/inventory")},function(o){console.log("login failed")})}}]);

@@ -1,5 +1,6 @@
+<div ng-include src="'app/navigation.html'"></div>
+<div class="col-sm-9 col-sm-offset-2 col-md-10 col-md-offset-1 main">
 <div class="filter-bar">
-    <div class="container">
         <div class="row">
             <div class="col-md-3">
                 <input type="text" class="form-control" placeholder="CUSTOMER NAME">
@@ -8,12 +9,10 @@
                 <button class="btn btn-primary full-width">UPDATE</button>
             </div>
         </div>
-    </div>
 </div>
-<div class="container">
 
     <div class="row">
-        <div class="col-md-4" ng-repeat="user in data">
+        <div class="col-sm-6 col-md-4 spacing-bottom" ng-repeat="user in data">
             <div class="customer__wrapper">
                 <div class="customer__info">
                     <div class="pull-left customer__info--thumb">
@@ -21,7 +20,7 @@
                     </div>
                     <div class="customer__info--wrapper">
                         <div class="customer__info--user">
-                            <p>{{user.first_name}} {{user.last_name}}<span>{{user.location}}</span></p>
+                            <p><a href="">{{user.first_name}} {{user.last_name}}</a><span>{{user.location}}</span></p>
                         </div>
                     </div>
                     <div class="clearfix"></div>

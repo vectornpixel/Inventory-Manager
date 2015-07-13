@@ -1,5 +1,6 @@
+<div ng-include src="'app/navigation.html'"></div>
+<div class="col-sm-9 col-sm-offset-2 col-md-10 col-md-offset-1 main">
 <div class="filter-bar">
-    <div class="container">
         <div class="row">
             <div class="col-md-3 padding-left-none">
                 <input type="text" class="form-control" placeholder="ORDER NUMBER">
@@ -8,9 +9,7 @@
                 <button class="btn btn-primary full-width">UPDATE</button>
             </div>
         </div>
-    </div>
 </div>
-<div class="container">
     <!--<button class="btn btn-primary">UPDATE</button>-->
     <div class="row">
             <div class="content-table___list">
@@ -29,7 +28,7 @@
                     <tr ng-repeat="inventory in data">
 
                         <td>{{inventory.stock}}</td>
-                        <td>{{inventory.name}}</td>
+                        <td><a href="">{{inventory.name}}</a></td>
                         <td>{{inventory.type}}</td>
                         <td>{{inventory.category}}</td>
                         <td>{{inventory.sku}}</td>
@@ -39,7 +38,7 @@
                     </tbody>
                 </table>
 
-                    <ul class="pagination">
+                   <!-- <ul class="pagination">
                         <li>
                             <a href="#" aria-label="Previous">
                                 <span aria-hidden="true">&laquo;</span>
@@ -55,7 +54,7 @@
                                 <span aria-hidden="true">&raquo;</span>
                             </a>
                         </li>
-                    </ul>
+                    </ul>-->
 
             </div>
     </div>

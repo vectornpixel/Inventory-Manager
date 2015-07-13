@@ -154,8 +154,11 @@ hr {
   background-color: #e74c3c;
   color: #ffffff;
   text-align: center;
-  height: 150px;
+  height: 200px;
   padding: 10px;
+}
+#sidebar #logo p {
+  color: #e2e2e2;
 }
 #sidebar #logo h1 {
   font-size: 72px;
@@ -219,11 +222,11 @@ hr {
   padding: 10px 0px 22px 0px;
   border: none;
   border-radius: 0px;
-  border-bottom: 1px solid #ffffff;
+  border-bottom: 1px solid #d5d5d5;
   outline: none;
   margin-bottom: 20px;
   background: none;
-  color: #ffffff;
+  color: #494949;
 }
 .form__search label {
   text-align: left !important;
@@ -268,12 +271,15 @@ hr {
 .form__search.label-bottom input:not(.empty) + label {
   top: 3em;
 }
+.main {
+  padding-left: 100px;
+}
 .header {
-  background-color: #d5d5d5;
   padding: 20px;
 }
-.header h2 {
+.header h3 {
   margin: 0;
+  color: #494949;
 }
 .content-table__head {
   background-color: #d5d5d5;
@@ -295,13 +301,17 @@ hr {
   background-color: #e2e2e2;
 }
 #search-bar {
-  background-color: #e74c3c;
+  background-color: #e2e2e2;
   padding: 30px;
   text-align: center;
   margin-bottom: 50px;
 }
 .filter-bar {
   margin-bottom: 50px;
+}
+#login__wrapper {
+  width: 500px;
+  margin: 100px auto 0 auto;
 }
 /*------------------------------------*\
 	$Buttons

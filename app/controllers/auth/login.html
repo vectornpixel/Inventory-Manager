@@ -1,0 +1,26 @@
+<div id="login__wrapper">
+    <p class="beta">
+        Inventory Manager Application
+    </p>
+<p class="epsilon">
+    is currently under development. Regular updates are being made to improve user experience, responsive viewing, and functionality.
+
+</p>
+    <p class="epsilon">
+        This application is being developed using Angular JS, future development includes adding RESTFul web services.
+        Demo the app:<br>
+        email: test@vnp.com, password: demo
+    </p>
+        <form>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" ng-model="userInfo.email" id="exampleInputEmail1" placeholder="Email">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" ng-model="userInfo.password" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <button type="submit" class="btn btn-primary full-width" ng-click="SignIn()">LOGIN</button>
+        </form>
+
+</div>
